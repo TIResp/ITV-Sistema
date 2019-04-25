@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Atividades</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    	<div class="col-md-12">
+        	<h1 class="page-header">Cadastro de atividades</h1>
+        </div>
+
+        <div class="col-md-12"> 
+        	<form action="" method="post">
+        		<div class="form-group">
+        			<label>Nome da atividade</label>
+        			<input type="text" name="nome" id="nome" placeholder="Entre com o nome" required autofocus class="form-control">
+        		</div> 
+				<div class="row">
+
+					<div class="col-sm-2">
+        				<div class="form-group">
+        					<label>Código da atividade</label>
+        					<input type="number" name="codigo" id="codigo" placeholder="Insira um código" required autofocus class="form-control">
+        				</div> 
+        			</div>
+        			<div class="col-sm-2">
+        				<div class="form-group">
+        					<label>Código do professor</label>
+        					<input type="number" name="codigo_funcionario" id="codigo_funcionario" placeholder="Insira um código" required autofocus class="form-control">
+        				</div> 
+        			</div>
+        			<div class="col-sm-2">
+        				<div class="form-group">
+        					<label>Código da modalidade</label>
+        					<input type="number" name="codigo_modalidade" id="codigo_modalidade" placeholder="Insira um código" required autofocus class="form-control">
+        				</div> 
+        			</div>
+
+        		</div>
+
+<!-- Cadastro das turmas -->
+
+        		<div class="col-md-12">
+                        <h1 class="page-header">Cadastro de turma</h1>
+                </div> 
+
+                <div class="row">
+					<div class="col-sm-4">
+        				<div class="form-group">
+        					<label>Código da turma</label>
+        					<input type="number" name="codigo" id="codigo" placeholder="Insira um código" required autofocus class="form-control">
+        				</div> 
+        			</div>
+        		</div>
+
+        		<div class="row">
+        			<div class="col-sm-2">
+        				<div class="form-group">
+        					<label>Primeira aula</label>
+        					<input type="date" name="data_inicio" id="data_inicio" required class="form-control">
+        				</div> 
+        			</div>
+        			<div class="col-sm-2">
+        				<div class="form-group">
+        					<label>Ultima aula</label>
+        					<input type="date" name="data_fim" id="data_fim" required class="form-control">
+        				</div> 
+        			</div>
+        		</div>
+
+        		<div class="row">
+        			<div class="col-sm-2">
+        				<div class="form-group">
+        					<label>Hora de início</label>
+        					<input type="time" name="hora_inicio" id="hora_inicio" required class="form-control">
+        				</div> 
+        			</div>
+        			<div class="col-sm-2">
+        				<div class="form-group">
+        					<label>Hora de termino</label>
+        					<input type="time" name="hora_fim" id="hora_fim" required class="form-control">
+        				</div> 
+        			</div>
+                </div>
+
+                <div class="row">
+                	<div class="col-sm-2">
+        				<div class="form-group">
+        					<label>Carga horária da turma</label>
+        					<input type="number" name="carga_horaria" id="carga_horaria" placeholder="Horas semanais" required class="form-control">
+        				</div> 
+        			</div>
+                </div>
+
+                <div class="row">
+                	<div class="col-sm-3">
+        				<div class="form-group">
+        					<label>Código da disciplina da turma</label>
+        					<input type="number" name="codigo_atividade" id="codigo_atividade" placeholder="Matéria" required class="form-control">
+        				</div> 
+        			</div>
+        			<div class="col-sm-3">
+        				<div class="form-group">
+        					<label>Código do professor da turma</label>
+        					<input type="number" name="codigo_funcionario_instruto" id="codigo_funcionario_instruto" placeholder="Professor responsável" required class="form-control">
+        				</div> 
+        			</div>
+        		</div>
+
+				<div style="text-align: right;">
+                    <button class="btn btn-success" type="submit">Enviar</button>
+                    <button class="btn btn-default" type="reset">Cancelar</button>
+                </div>
+    		</form>
+    	</div>
+</body>  
